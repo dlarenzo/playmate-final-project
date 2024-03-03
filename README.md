@@ -2,6 +2,7 @@
 
 Created branch: main
 Created branch: 1.0-navbar
+Created branch: 2.0-banner
 
 https://nov-playmate.myshopify.com/
 

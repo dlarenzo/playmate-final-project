@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const FourSquare = () => {
+const LatestBlogs = () => {
   return (
     <div className="flex flex-wrap justify-around gap-2 rounded pt-5 pb-5">
       <div style={{ width: "48%" }}>
@@ -48,4 +48,4 @@ const FourSquare = () => {
   );
 };
 
-export default FourSquare;
+export default LatestBlogs;

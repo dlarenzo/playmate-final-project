@@ -3,7 +3,7 @@ import FourSquare from "./FourSquare";
 
 const MainSection = () => {
   return (
-    <div className="bg-white w-2/3 mx-auto text-black rounded">
+    <div className="bg-white w-5/6 mx-auto text-black rounded mb-5">
       <FourSquare />
     </div>
   );

@@ -5,7 +5,7 @@ import { StarIcon } from "@heroicons/react/24/outline";
 
 const GameTrending = () => {
   return (
-    <div className="w-5/6 mx-auto rounded">
+    <div className="w-5/6 mx-auto rounded mb-5">
       <div className="bg-[url('/images/game-trending.webp')] bg-center bg-cover flex flex-col justify-center text-center   relative w-full h-2/5 rounded border border-gray-800 mt-5 ">
         <div className="flex items-center justify-between w-full py-6 px-6 text-black">
           <div className="w-1/4 border-white text-left">

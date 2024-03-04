@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useState, useRef } from "react";
+import StoreTag from "./StoreTag";
 
 const gamesData = [
   {
@@ -52,12 +54,39 @@ const gamesData = [
 ];
 
 const StoreGames = () => {
+  const [tag, setTag] = useState("All");
+  const handleTagChange = (newTag) => {
+    setTag(newTag);
+  };
+
   return (
-    <section className="w-5/6 mx-auto bg-white rounded px-4 py-20">
+    <section className=" rounded px-5 py-5 text-center">
       <div className="border-b-2 pb-5" text-center>
         <h1 className="text-3xl font-extrabold underline underline-offset-[26px]">
-          Latest Blogs
+          Store Games
         </h1>
+      </div>
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+        <StoreTag
+          onClick={handleTagChange}
+          name="All"
+          isSelected={tag === "All"}
+        />
+        <StoreTag
+          onClick={handleTagChange}
+          name="Web"
+          isSelected={tag === "New Arrivals"}
+        />
+        <StoreTag
+          onClick={handleTagChange}
+          name="Mobile"
+          isSelected={tag === "Best Sellers"}
+        />
+        <StoreTag
+          onClick={handleTagChange}
+          name="Email"
+          isSelected={tag === "On Sale"}
+        />
       </div>
     </section>
   );

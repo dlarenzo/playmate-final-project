@@ -61,14 +61,16 @@ const GameTrending = () => {
           </div>
           <div className="flex justify-between gap-6">
             <div className="w-1/3 bg-white rounded p-2">
-              <Image
-                src="/images/games-trending/1-gears.webp"
-                width={1200}
-                height={436}
-                alt="four square"
-                className="rounded"
-                layout="responsive"
-              />
+              <div className="overflow-hidden">
+                <Image
+                  src="/images/games-trending/1-gears.webp"
+                  width={1200}
+                  height={436}
+                  alt="four square"
+                  className="transition ease-out rounded hover:scale-125 duration-[5500ms]"
+                  layout="responsive"
+                />
+              </div>
               <div className="w-full bg-white rounded p-2 w-full text-sm font-extrabold">
                 <p className="mt-4 mb-2">Gears of War 4</p>
 
@@ -86,14 +88,16 @@ const GameTrending = () => {
               </div>
             </div>
             <div className="w-1/3 bg-white rounded p-2">
-              <Image
-                src="/images/games-trending/2-gow.webp"
-                width={1200}
-                height={436}
-                alt="four square"
-                className="rounded"
-                layout="responsive"
-              />
+              <div className="overflow-hidden">
+                <Image
+                  src="/images/games-trending/2-gow.webp"
+                  width={1200}
+                  height={436}
+                  alt="four square"
+                  className="transition ease-out rounded hover:scale-125 duration-[5500ms]"
+                  layout="responsive"
+                />
+              </div>
               <div className="w-full bg-white rounded p-2 w-full text-sm font-extrabold">
                 <p className="mt-4 mb-2">God of War 4</p>
 
@@ -111,14 +115,16 @@ const GameTrending = () => {
               </div>
             </div>
             <div className="w-1/3 bg-white rounded p-2">
-              <Image
-                src="/images/games-trending/3-frostpunk.webp"
-                width={1200}
-                height={436}
-                alt="four square"
-                className="rounded"
-                layout="responsive"
-              />
+              <div className="overflow-hidden ">
+                <Image
+                  src="/images/games-trending/3-frostpunk.webp"
+                  width={1200}
+                  height={436}
+                  alt="four square"
+                  className="transition ease-out rounded hover:scale-125 duration-[5500ms] overflow-hidden"
+                  layout="responsive"
+                />
+              </div>
               <div className="w-full bg-white rounded p-2 w-full text-sm font-extrabold">
                 <p className="mt-4 mb-2">Frostpunk</p>
 

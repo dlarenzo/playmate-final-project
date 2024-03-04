@@ -5,7 +5,6 @@ import GameTrending from "./components/GameTrending";
 import MainSection from "./components/MainSection";
 import HeadGame from "./components/HeadGame";
 import LatestBlogs from "./components/LatestBlogs";
-import BannerMessage from "./components/BannerMessage";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
         <HeadGame />
         <GameTrending />
         <LatestBlogs />
-        <BannerMessage />
       </div>
     </div>
   );

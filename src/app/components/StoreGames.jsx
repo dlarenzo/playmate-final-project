@@ -1,12 +1,13 @@
 "use client";
 import React, { useState, useRef } from "react";
 import StoreTag from "./StoreTag";
+import StoreCard from "./StoreCard";
 
-const gamesData = [
+const storesData = [
   {
     id: 1,
     title: "Kingdom Hearts ",
-    image: "/images/games/game1.jpg",
+    image: "/images/store-games/1-kingdom-hearts.webp",
     tag: ["New arrivals", "Best Sellers", "On Sale"],
     cost: 70.0,
     gitUrl: "/",
@@ -14,7 +15,7 @@ const gamesData = [
   {
     id: 2,
     title: "Battle Tech",
-    image: "/images/games/game1.jpg",
+    image: "/images/store-games/2-battle-tech.webp",
     tag: ["New arrivals", "Best Sellers", "On Sale"],
     cost: 100.0,
     gitUrl: "/",
@@ -22,31 +23,47 @@ const gamesData = [
   {
     id: 3,
     title: "Xenoblade Chronicles 2",
-    image: "/images/games/game1.jpg",
+    image: "/images/store-games/3-xenoblade.webp",
     tag: ["New arrivals", "Best Sellers", "On Sale"],
     cost: 100.0,
     gitUrl: "/",
   },
   {
     id: 4,
-    title: "God of War 4",
-    image: "/images/games/game1.jpg",
-    tag: ["New arrivals", "Best Sellers", "On Sale"],
-    cost: 200.0,
-    gitUrl: "/",
-  },
-  {
-    id: 5,
-    title: "Cyberpunk 2077",
-    image: "/images/games/game1.jpg",
+    title: "Assassin's Creed Odyssey",
+    image: "/images/store-games/4-ac-odyssey.webp",
     tag: ["New arrivals", "Best Sellers", "On Sale"],
     cost: 100.0,
     gitUrl: "/",
   },
   {
+    id: 5,
+    title: "God of War 4",
+    image: "/images/store-games/5-gow.webp",
+    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    cost: 200.0,
+    gitUrl: "/",
+  },
+  {
     id: 6,
+    title: "Cyberpunk 2077",
+    image: "/images/store-games/6-cyberpunk.webp",
+    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    cost: 100.0,
+    gitUrl: "/",
+  },
+  {
+    id: 7,
     title: "Cover Fire",
-    image: "/images/games/game1.jpg",
+    image: "/images/store-games/7-cover-fire.jpeg",
+    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    cost: 50.0,
+    gitUrl: "/",
+  },
+  {
+    id: 8,
+    title: "Death Strand",
+    image: "/images/store-games/8-death-strand.webp",
     tag: ["New arrivals", "Best Sellers", "On Sale"],
     cost: 50.0,
     gitUrl: "/",
@@ -55,9 +72,12 @@ const gamesData = [
 
 const StoreGames = () => {
   const [tag, setTag] = useState("All");
+  const ref = useRef(null);
   const handleTagChange = (newTag) => {
     setTag(newTag);
   };
+
+  const filteredStore = storesData.filter((store) => store.tag.includes(tag));
 
   return (
     <section className=" rounded px-5 py-5 text-center">
@@ -88,6 +108,24 @@ const StoreGames = () => {
           isSelected={tag === "On Sale"}
         />
       </div>
+      <div className="grid max-lg:grid-cols-2 gap-4 grid-cols-4 max-2xl:grid-cols-3 max-md:grid-cols-1">
+        {storesData.map((store) => (
+          <StoreCard
+            key={store.id}
+            title={store.title}
+            imgUrl={store.image}
+            cost={store.cost}
+            tags={tag}
+          />
+        ))}
+      </div>
+
+      {/* <div ref={ref} className="gird md:grid-cols-3 gap-8 md:gap-12">
+        {filteredStore.map((game) => (
+          <StoreCard key={game.id} title={game.title} imgUrl={game.image} />
+        ))}
+        
+      </div> */}
     </section>
   );
 };

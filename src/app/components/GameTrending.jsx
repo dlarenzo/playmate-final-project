@@ -7,139 +7,140 @@ const GameTrending = () => {
   return (
     <div className="w-5/6 mx-auto rounded mb-5">
       <div className="bg-[url('/images/game-trending.webp')] bg-center bg-cover flex flex-col justify-center text-center   relative w-full h-2/5 rounded border border-gray-800 mt-5 ">
-        <div className="flex items-center justify-between w-full py-6 px-6 text-black">
-          <div className="w-1/4 border-white text-left">
-            <h3 className="text-orange-600 font-extrabold text-2xl underline underline-offset-[25px]">
-              Game Trending
-            </h3>
-            {/* <ul>
+        <div className="flex items-center justify-between gap-6 w-full py-6 px-6 text-black">
+          <div className="w-1/4 h-100 border border-white text-left">
+            <div className="mb-20">
+              <h3 className="text-orange-600 font-extrabold text-2xl underline underline-offset-[25px]">
+                Game Trending
+              </h3>
+            </div>
+            <ul className="text-white leading-7 pb-20">
               <li>
                 {" "}
-                <Link>Action & Adventure</Link>
+                <Link href="/">Action & Adventure</Link>
               </li>
               <li>
                 {" "}
-                <Link>Fighting</Link>
+                <Link href="/">Fighting</Link>
               </li>
               <li>
                 {" "}
-                <Link>Indie</Link>
+                <Link href="/">Indie</Link>
               </li>
               <li>
                 {" "}
-                <Link>Kid & Family</Link>
+                <Link href="/">Kid & Family</Link>
               </li>
               <li>
                 {" "}
-                <Link>Racing & Flying</Link>
+                <Link href="/">Racing & Flying</Link>
               </li>
               <li>
                 {" "}
-                <Link>Roleplaying</Link>
+                <Link href="/">Roleplaying</Link>
               </li>
               <li>
                 {" "}
-                <Link>Shooter</Link>
+                <Link href="/">Shooter</Link>
               </li>
               <li>
                 {" "}
-                <Link>Sport</Link>
+                <Link href="/">Sport</Link>
               </li>
               <li>
                 {" "}
-                <Link>Strategy Games</Link>
+                <Link href="/">Strategy Games</Link>
               </li>
               <li>
                 {" "}
-                <Link>Simulation</Link>
+                <Link href="/">Simulation</Link>
               </li>
               <li>
                 {" "}
-                <Link>Game Music</Link>
+                <Link href="/">Game Music</Link>
               </li>
-            </ul> */}
+            </ul>
           </div>
-          <div className="flex justify-between gap-6">
-            <div className="w-1/3 bg-white rounded p-2">
-              <div className="overflow-hidden">
-                <Image
-                  src="/images/games-trending/1-gears.webp"
-                  width={1200}
-                  height={436}
-                  alt="four square"
-                  className="transition ease-out rounded hover:scale-125 duration-[5500ms]"
-                  layout="responsive"
-                />
-              </div>
-              <div className="w-full bg-white rounded p-2 w-full text-sm font-extrabold">
-                <p className="mt-4 mb-2">Gears of War 4</p>
 
-                <div className="flex justify-center mb-2 text-gray-300 ">
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                </div>
-                <p className="mb-4 ">$200.00</p>
-                <button className=" bg-gray-200 hover:bg-orange-600 px-10 py-3 rounded text-black hover:text-white font-extrabold uppercase text-xs">
-                  Add to Cart
-                </button>
-              </div>
+          <div className="w-1/4 bg-white rounded p-2">
+            <div className="overflow-hidden">
+              <Image
+                src="/images/games-trending/1-gears.webp"
+                width={1200}
+                height={436}
+                alt="four square"
+                className="transition ease-out rounded hover:scale-125 duration-[5500ms]"
+                layout="responsive"
+              />
             </div>
-            <div className="w-1/3 bg-white rounded p-2">
-              <div className="overflow-hidden">
-                <Image
-                  src="/images/games-trending/2-gow.webp"
-                  width={1200}
-                  height={436}
-                  alt="four square"
-                  className="transition ease-out rounded hover:scale-125 duration-[5500ms]"
-                  layout="responsive"
-                />
-              </div>
-              <div className="w-full bg-white rounded p-2 w-full text-sm font-extrabold">
-                <p className="mt-4 mb-2">God of War 4</p>
+            <div className="w-full bg-white rounded p-2 w-full text-sm font-extrabold">
+              <p className="mt-4 mb-2">Gears of War 4</p>
 
-                <div className="flex justify-center mb-2 text-gray-300 ">
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                </div>
-                <p className="mb-4 ">$200.00</p>
-                <button className=" bg-gray-200 hover:bg-orange-600 px-10 py-3 rounded text-black hover:text-white font-extrabold uppercase text-xs">
-                  Add to Cart
-                </button>
+              <div className="flex justify-center mb-2 text-gray-300 ">
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
               </div>
+              <p className="mb-4 ">$200.00</p>
+              <button className=" bg-gray-200 hover:bg-orange-600 px-10 py-3 rounded text-black hover:text-white font-extrabold uppercase text-xs">
+                Add to Cart
+              </button>
             </div>
-            <div className="w-1/3 bg-white rounded p-2">
-              <div className="overflow-hidden ">
-                <Image
-                  src="/images/games-trending/3-frostpunk.webp"
-                  width={1200}
-                  height={436}
-                  alt="four square"
-                  className="transition ease-out rounded hover:scale-125 duration-[5500ms] overflow-hidden"
-                  layout="responsive"
-                />
-              </div>
-              <div className="w-full bg-white rounded p-2 w-full text-sm font-extrabold">
-                <p className="mt-4 mb-2">Frostpunk</p>
+          </div>
+          <div className="w-1/4 bg-white rounded p-2">
+            <div className="overflow-hidden">
+              <Image
+                src="/images/games-trending/2-gow.webp"
+                width={1200}
+                height={436}
+                alt="four square"
+                className="transition ease-out rounded hover:scale-125 duration-[5500ms]"
+                layout="responsive"
+              />
+            </div>
+            <div className="w-full bg-white rounded p-2 w-full text-sm font-extrabold">
+              <p className="mt-4 mb-2">God of War 4</p>
 
-                <div className="flex justify-center mb-2 text-gray-300 ">
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                  <StarIcon className="h5 w-5" />
-                </div>
-                <p className="mb-4 ">$200.00</p>
-                <button className=" bg-gray-200 hover:bg-orange-600 px-10 py-3 rounded text-black hover:text-white font-extrabold uppercase text-xs">
-                  Add to Cart
-                </button>
+              <div className="flex justify-center mb-2 text-gray-300 ">
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
               </div>
+              <p className="mb-4 ">$200.00</p>
+              <button className=" bg-gray-200 hover:bg-orange-600 px-10 py-3 rounded text-black hover:text-white font-extrabold uppercase text-xs">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div className="w-1/4 bg-white rounded p-2">
+            <div className="overflow-hidden ">
+              <Image
+                src="/images/games-trending/3-frostpunk.webp"
+                width={1200}
+                height={436}
+                alt="four square"
+                className="transition ease-out rounded hover:scale-125 duration-[5500ms] overflow-hidden"
+                layout="responsive"
+              />
+            </div>
+            <div className="w-full bg-white rounded p-2 w-full text-sm font-extrabold">
+              <p className="mt-4 mb-2">Frostpunk</p>
+
+              <div className="flex justify-center mb-2 text-gray-300 ">
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+                <StarIcon className="h5 w-5" />
+              </div>
+              <p className="mb-4 ">$200.00</p>
+              <button className=" bg-gray-200 hover:bg-orange-600 px-10 py-3 rounded text-black hover:text-white font-extrabold uppercase text-xs">
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>

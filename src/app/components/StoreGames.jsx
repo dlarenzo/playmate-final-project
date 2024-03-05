@@ -8,7 +8,7 @@ const storesData = [
     id: 1,
     title: "Kingdom Hearts ",
     image: "/images/store-games/1-kingdom-hearts.webp",
-    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    tag: ["All", , "Best Sellers"],
     cost: 70.0,
     gitUrl: "/",
   },
@@ -16,7 +16,7 @@ const storesData = [
     id: 2,
     title: "Battle Tech",
     image: "/images/store-games/2-battle-tech.webp",
-    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    tag: ["All", "On Sale"],
     cost: 100.0,
     gitUrl: "/",
   },
@@ -24,7 +24,7 @@ const storesData = [
     id: 3,
     title: "Xenoblade Chronicles 2",
     image: "/images/store-games/3-xenoblade.webp",
-    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    tag: ["All", "Best Sellers"],
     cost: 100.0,
     gitUrl: "/",
   },
@@ -32,7 +32,7 @@ const storesData = [
     id: 4,
     title: "Assassin's Creed Odyssey",
     image: "/images/store-games/4-ac-odyssey.webp",
-    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    tag: ["All", , "Best Sellers", "On Sale"],
     cost: 100.0,
     gitUrl: "/",
   },
@@ -40,7 +40,7 @@ const storesData = [
     id: 5,
     title: "God of War 4",
     image: "/images/store-games/5-gow.webp",
-    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    tag: ["All", "New arrivals", "Best Sellers"],
     cost: 200.0,
     gitUrl: "/",
   },
@@ -48,7 +48,7 @@ const storesData = [
     id: 6,
     title: "Cyberpunk 2077",
     image: "/images/store-games/6-cyberpunk.webp",
-    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    tag: ["All", "New arrivals", "Best Sellers"],
     cost: 100.0,
     gitUrl: "/",
   },
@@ -56,7 +56,7 @@ const storesData = [
     id: 7,
     title: "Cover Fire",
     image: "/images/store-games/7-cover-fire.jpeg",
-    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    tag: ["All", "On Sale"],
     cost: 50.0,
     gitUrl: "/",
   },
@@ -64,7 +64,7 @@ const storesData = [
     id: 8,
     title: "Death Strand",
     image: "/images/store-games/8-death-strand.webp",
-    tag: ["New arrivals", "Best Sellers", "On Sale"],
+    tag: ["All", "New arrivals", "On Sale"],
     cost: 50.0,
     gitUrl: "/",
   },
@@ -94,17 +94,17 @@ const StoreGames = () => {
         />
         <StoreTag
           onClick={handleTagChange}
-          name="Web"
+          name="New Arrivals"
           isSelected={tag === "New Arrivals"}
         />
         <StoreTag
           onClick={handleTagChange}
-          name="Mobile"
+          name="Best Sellers"
           isSelected={tag === "Best Sellers"}
         />
         <StoreTag
           onClick={handleTagChange}
-          name="Email"
+          name="On Sale"
           isSelected={tag === "On Sale"}
         />
       </div>
@@ -119,13 +119,6 @@ const StoreGames = () => {
           />
         ))}
       </div>
-
-      {/* <div ref={ref} className="gird md:grid-cols-3 gap-8 md:gap-12">
-        {filteredStore.map((game) => (
-          <StoreCard key={game.id} title={game.title} imgUrl={game.image} />
-        ))}
-        
-      </div> */}
     </section>
   );
 };

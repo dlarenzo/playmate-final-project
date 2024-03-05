@@ -8,7 +8,7 @@ const GameTrending = () => {
     <div className="w-5/6 mx-auto rounded mb-5">
       <div className="bg-[url('/images/game-trending.webp')] bg-center bg-cover flex flex-col justify-center text-center   relative w-full h-2/5 rounded border border-gray-800 mt-5 ">
         <div className="flex items-center justify-between gap-6 w-full py-6 px-6 text-black">
-          <div className="w-1/4 h-100 border border-white text-left">
+          <div className="w-1/4 h-100  text-left">
             <div className="mb-20">
               <h3 className="text-orange-600 font-extrabold text-2xl underline underline-offset-[25px]">
                 Game Trending

@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import myCustomClasses from "./myCustomClasses";
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,5 +16,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [myCustomClasses],
 };

@@ -10,7 +10,7 @@ const StoreCard = ({ imgUrl, title, cost }) => {
         <div className="rounded h-full relative group ">
           <Image src={imgUrl} width={450} height={500} alt="store images" />
 
-          <div className="overlay absolute top-0 left-0 p-20 flex justify-end w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
+          <div className="overlay absolute top-0 left-0 p-5 flex justify-end w-full h-full  bg-opacity-95 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
             <Link
               href="/"
               className="h-14 w-14 relative  bg-white hover:bg-orange-600 rounded-full group/link"
